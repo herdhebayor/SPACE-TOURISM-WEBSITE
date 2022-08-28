@@ -1,0 +1,202 @@
+body{
+  background-image: url("assets/destination/background-destination-desktop.jpg");
+  color: #fff;
+  background-color:#000;
+  margin: 0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 16px;
+  height: 600px;
+}
+nav{
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 80px;
+margin: 30px 10px;
+}
+.line{
+position: absolute;
+width: 35%;
+border: 1px solid #fff;
+top: 60px;
+left: 80px;
+z-index: 1;
+}
+.nav_btn{
+width: 60%;
+display: flex;
+justify-content: space-around;
+background-color: rgba(0, 0, 7, 0.3);
+backdrop-filter: blur(3px);
+height: 100%;
+padding-left: 70px;
+}
+.open{
+  display: none;
+  z-index: 2;
+  cursor: pointer;
+}
+.close{
+  display: none;
+  z-index: 2;
+  cursor: pointer;
+}
+.hamburger{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+  background-color: #000;
+  height: 100%;
+  color: #fff;
+  display: none;
+
+}
+a{
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+}
+.menu{
+height: 100%;
+border: 0;
+background-color: transparent;
+color: #fff;
+}
+.menu:hover{
+border-bottom: 2px solid #fff;
+}
+main{
+margin: 50px 0 50px 50px ;
+}
+.alone{
+margin: 50px;
+}
+span{
+  color: rgb(160, 156, 156);
+}
+  .container{
+    display: flex;
+    justify-content: space-between;
+    margin:  50px ;
+    padding: 0 50px;
+  }
+  .section, .imgSection{
+    width: 40%;
+    height: fit-content;
+    margin: 0 50px ;
+    line-height: 20px;
+  }
+  img{
+    width: 80%;
+    height: 80%;
+  }
+  .imgEuropa, .imgMars, .imgTitan{
+    display: none;
+  }
+  .mars, .europa, .titan{
+    display: none;
+  }
+  .distance{
+    display: flex;
+    justify-content: space-between;
+  }
+  .distance div{
+    margin: 10px 30px;
+    line-height: 20px;
+  }
+  .distance div:first-child{
+    margin-left: 0;
+  }
+  #europaDistance, #marsDistance, #titanDistance{
+    display: n;
+  }
+  .planetName{
+    font-size: 5em;
+    text-transform: uppercase;
+  }
+   ul{
+    display: flex;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    justify-content: space-between;
+    list-style: none;
+  } 
+  li{
+    margin: 0 10px 0 0;
+  }
+  li:hover{
+    border-bottom: 1px solid #fff;
+  }
+  @media screen and (max-width:1000px ) {
+    body{
+      background-image: url("assets/destination/background-destination-tablet.jpg");
+      background-repeat:no-repeat ;
+      background-size: cover;
+      background-color:#000;
+    }
+    .line{
+      display: none;
+    }
+    .container{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+    }
+    .section, .imgSection{
+      width: 90%;
+      text-align: center;
+      margin: 0 50px;
+    }
+    img{
+      width: 100%;
+      margin: 10px auto;
+    }
+    .section{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+   ul{
+    text-align: center;
+   }
+    main{
+      margin: 10px;
+    }
+    .list{
+      align-self: center;
+      width: fit-content;
+    }
+  }
+
+  @media screen and (max-width: 500px){
+    body{
+      background-image:url("assets/destination/background-destination-mobile.jpg") ;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-color:#000;
+    }
+    nav{
+      margin: 10px 10px;
+    }
+    .btn{
+      margin: 90px 10px;
+    }
+    .btn button{
+      margin: 10px;
+    }
+    .nav_btn{
+      display: none;
+    }
+    .open{
+      display: block;
+    }
+    .imgSection, .section{
+      width:100%;
+    }
+    
+  }

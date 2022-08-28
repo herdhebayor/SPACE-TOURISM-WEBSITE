@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="destination.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+<title>Frontend Mentor | Space tourism website</title>
+</head>
+<body>
+    <div class="hamburger">
+        <div class="btn">
+          <button id="home" class="menu"><a href="index.html"><strong>00</strong> Home</a></button> 
+          <button id="destination" class="menu"><a href="./destination.html"><strong>01</strong> Destination</a></button>
+          <button id="crew" class="menu"><a href="./crew.html"><strong>02</strong> Crew</a></button>
+          <button id="technology" class="menu"><a href="./technology.html"><strong>03</strong> Technology</a></button>
+        </div>
+      </div>
+    <nav>
+        <div class="logo">
+          <div class="star">
+           <div><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><g fill="none" fill-rule="evenodd"><circle cx="24" cy="24" r="24" fill="#FFF"/><path fill="#0B0D17" d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"/></g></svg> </div>
+            
+          </div>
+          <hr class="line">
+        </div>
+        <div class="nav_btn">
+            <button id="home" class="menu"><a href="index.html"><strong>00</strong> Home</a></button> 
+            <button id="destination" class="menu"><a href="./destination.html"><strong>01</strong> Destination</a></button>
+            <button id="crew" class="menu"><a href="./crew.html"><strong>02</strong> Crew</a></button>
+            <button id="technology" class="menu"><a href="./technology.html"><strong>03</strong> Technology</a></button>
+        </div>
+        <div class="open">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21"><g fill="#D0D6F9" fill-rule="evenodd">
+              <path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z"/></g></svg>
+          </div>
+          <div class="close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"><g fill="#D0D6F9" fill-rule="evenodd"><path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z"/>
+              <path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z"/></g></svg>
+          </div>
+         
+    </nav>
+
+    <!-- BODY SECTION -->
+    
+<main id="destination">
+<div class="alone"> <h1><span><strong>01</strong></span> Pick your destination</h1></div>
+<div class="container">
+
+    <div class="imgScetion">
+      <div class="imgMoon"><img src="assets/destination/image-moon.png" alt="moon"></div>
+      <div class="imgMars"><img src="assets/destination/image-mars.png" alt="mars"></div>
+      <div class="imgEuropa"><img src="assets/destination/image-europa.png" alt="europa"></div>
+      <div class="imgTitan"><img src="assets/destination/image-titan.png" alt="titan"></div>
+    </div>
+
+<div class="section">
+     <ul class="list">
+        <li class="destinav" id="moon">MOON</li>
+        <li class="destinav" id="mars">MARS</li>
+        <li class="destinav" id="europa"> EUROPA</li>
+        <li class="destinav" id="titan" > TITAN</li>
+    </ul>
+
+        <!-- MOON TEXT -->
+        
+    <div id="moonText" class="moon">
+            <h1 class="planetName">Moon</h1>
+        <div class="text">
+            <p>
+                See our planet as you've never seen it before. A perfect relaxing trip away to help 
+                regain perspective and come back refreshed. While you're there, take in some history 
+                by visiting the Luna 2 and Apollo 11 landing sites.
+            </p>
+        </div>
+        <hr>
+        <div id="moonDistance" class="distance">
+            <div>
+                <p>Avg. distance</p>
+                <h3>384,400 km </h3>
+            </div>
+            <div>
+                <p>Est. travel time</p>   
+                <h3> 3 days </h3>
+            </div>
+        </div>
+    </div>
+
+                <!-- MARS TEXT -->
+
+    <div id="marsText" class="mars">     
+            <h1 class="planetName"> Mars</h1>
+        <div class="text">
+            <p>
+                Don't forget to pack your hiking boots. You'll need them to tackle Olympus Mons, 
+                the tallest planetary mountain in our solar system. It's two and a half times 
+                the size of Everest!
+            </p>
+        </div>
+        <hr>
+        <div id="marsDistance" class="distance">
+            <div>
+                <p> Avg. distance</p>
+                <h3>225 mil. km</h3>
+                </div>
+            <div>
+                <p> Est. travel time</p>
+                <h3> 9 months</h3>
+            </div>
+        </div>
+    </div>
+
+            <!-- EUROPA TEXT -->
+
+    <div id="europaText" class="europa">
+        <h1 class="planetName">Europa</h1>
+        <div class="europa_text">
+            <p>
+                The smallest of the four Galilean moons orbiting Jupiter, Europa is a 
+                winter lover's dream. With an icy surface, it's perfect for a bit of 
+                ice skating, curling, hockey, or simple relaxation in your snug 
+                wintery cabin.
+            </p>
+        </div>
+        <hr>
+        <div id="europaDistance" class="distance">
+            <div>
+                <p> Avg. distance</p>
+                <h3> 628 mil. km</h3>
+            </div>
+            <div>
+                <p>Est. travel time</p>
+                <h3>3 years</h3>
+            </div>
+        </div>
+    </div>
+
+                <!-- TITANS TEXT -->
+
+    <div id="titanText" class="titan">
+        <h1 class="planetName">Titan</h1>
+        <div class="text">
+            <p>
+                The only moon known to have a dense atmosphere other than Earth, Titan 
+                is a home away from home (just a few hundred degrees colder!). As a 
+                bonus, you get striking views of the Rings of Saturn.
+            </p>
+        </div>
+        <hr>
+        <div id="titanDistance" class="distance">
+            <div>
+                <p> Avg. distance</p>
+                <h3>1.6 bil. km</h3>
+            </div>
+            <div>
+                <p> Est. travel time</p>
+                <h3> 7 years</h3>
+            </div>
+        </div>
+    </div>
+    <!-- END -->
+ 
+</div>
+</main>
+    <script src="style.js">
+    </script>
+</body>
+</html>

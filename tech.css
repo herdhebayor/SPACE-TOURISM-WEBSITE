@@ -1,0 +1,215 @@
+body{
+    background-image: url("assets/technology/background-technology-desktop.jpg");
+    background-repeat: no-repeat;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  margin: 30px 0;
+}
+.open{
+  display: none;
+  z-index: 2;
+  cursor: pointer;
+}
+.close{
+  display: none;
+  z-index: 2;
+  cursor: pointer;
+}
+.imgLandscape{
+  display: none;
+}
+.hamburger{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+  background-color: #000;
+  height: 100%;
+  color: #fff;
+  display: none;
+}
+hr{
+  position: absolute;
+  width: 35%;
+  border: 1px solid #fff;
+  top: 60px;
+  left: 80px;
+  z-index: 1;
+}
+.nav_btn{
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(36, 36, 41, 0.3);
+  height: 100%;
+  padding-left: 70px;
+  backdrop-filter:blur(3px);
+}
+.menu{
+  height: 100%;
+  border: 0;
+  background-color: transparent;
+  color: #fff;
+}
+.menu:hover{
+  border-bottom: 2px solid #fff;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+main{
+  margin: 50px 0 50px 50px ;
+}
+span{
+  color: rgb(160, 156, 156);
+}
+.alone{
+  margin: 50px 50px;
+}
+.container{
+  display: flex;
+}
+.button button{
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  color: #000;
+  font-size: 20px;
+  margin: 20px;
+  cursor: pointer;
+}
+.tittle{
+  font-size: 3.5em;
+  font-weight: 700;
+}
+h3{
+  color:rgb(160, 156, 156) ;
+}
+.button button:hover{
+  background-color: transparent;
+  color: #fff;
+}
+.button a{
+  color:inherit;
+}
+.button{
+  width: fit-content;
+  height: 400px;
+  margin: 50px 0;
+ }
+.section{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  margin-top: 0;
+}
+
+.text {
+  width: 40%;
+  margin: 50px 10px;
+  height: 400px;
+  line-height: 30px;
+}
+.imgSection{
+  width: 40%;
+  height: 400px;
+  margin: 0 0 0 50px ;
+}
+.imgSection img{
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 1000px){
+  body{
+    background-image: url("assets/technology/background-technology-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+  .imgLandscape{
+    display: block;
+    margin: 0 ;
+    width: 100%;
+    height: fit-content;
+    
+  }
+  hr{
+    display: none;
+  }
+  .imgLandscape img{
+    width: 100%;
+   height: 100%;
+  }
+
+  main{
+    margin: 0;
+  }
+  .container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .text{
+    width: 80%;
+    margin:50px auto;
+    margin-top: 10px;
+  }
+  .button{
+    height: fit-content;
+  }
+  .imgSection{
+    display: none;
+  }
+
+}
+@media screen and (max-width:500px) {
+  body{
+    background-image: url("assets/technology/background-technology-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+  .nav_btn{
+    display: none;
+  }
+  
+  nav{
+    margin: 10px;
+  }
+  .tittle{
+    font-size: 2em;
+    font-weight: 400;
+  }
+  h3{
+    font-size: -2em;
+  }
+  .alone{
+    font-size: smaller;
+  }
+  .open{
+    display: block;
+  }
+  .btn{
+    margin:90px 10px;
+  }
+  .btn button{
+    margin:10px;
+  }
+  .myDisplay{
+    display: block;
+  }
+}

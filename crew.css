@@ -1,0 +1,256 @@
+body{
+    background-image: url("assets/crew/background-crew-desktop.jpg");
+    color: rgb(216, 213, 213);
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  margin: 30px 10px;
+  }
+  .open{
+    display: none;
+  }
+  .close{
+    display: none;
+  }
+  .line{
+  position: absolute;
+  width: 35%;
+  border: 1px solid #fff;
+  top: 60px;
+  left: 80px;
+  z-index: 1;
+  }
+  .nav_btn{
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 7, 0.3);
+  backdrop-filter: blur(3px);
+  height: 100%;
+  padding-left: 70px;
+  }
+  a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+  }
+  .menu{
+  height: 100%;
+  border: 0;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  }
+  .menu:hover{
+  border-bottom: 2px solid #fff;
+  }
+  .open{
+    display: none;
+    z-index:2;
+    cursor: pointer;
+  }
+  .close{
+    display: none;
+    z-index: 2;
+    cursor: pointer;
+  }
+  .hamburger{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    background-color: #000;
+    height: 100%;
+    color: #fff;
+    display: none;
+  }
+  .alone{
+    margin-left:  6rem  ;
+    margin-bottom: 0;
+    padding: 0 50px;
+    color: white;
+  }
+  main{
+    margin: 0 50px;
+  }
+  .tittle{
+    text-transform: uppercase;
+  }
+  .container{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 50px;
+    flex-wrap: nowrap;
+  }
+.textSection, .imgSection{
+    width: 50%;
+    height: 400px;
+}
+.textSection{
+ margin:50px 50px;
+}
+.imgSection{
+  height: 500px;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imgSection img{
+  width: 80%;
+  height: 100%;
+}
+.btn1{
+  margin:0 50px ;
+  display: flex;
+}
+.btn2{
+  display: none;
+}
+.imgSection2{
+ display: none;
+}
+.character {
+  line-height:normal;
+    margin: 50px 0;
+    padding: 0 50px;
+}
+span{
+  color: rgb(216, 213, 213);
+}
+.bold{
+    font-size: 3em;
+    color: white;
+    
+}
+
+.link{
+    border: 0;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(110, 109, 109);
+    color: rgb(110, 109, 109);
+    cursor: pointer;
+    margin: 20px 10px 0 0;
+}
+.link a{
+  color: transparent;
+}
+.link:hover{
+    background-color: white;
+    color: white;
+}
+
+@media screen and (max-width:1000px) {
+  body{
+    background-image: url("assets/crew/background-crew-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .line{
+    display: none;
+  }
+  .textSection, .imgSection{
+    width: 80%;
+    padding: 30px auto;
+    text-align: center;
+  }
+  hr{
+    width:100%;
+    margin:0;
+    padding:0;
+  }
+  main{
+    margin: 0 20px;
+  }
+  .alone{
+    margin-left: 20px;
+  }
+  .imgSection {
+    height: 600px;
+  }
+}
+@media screen and (max-width: 500px) {
+  body{
+    background-image: url("assets/crew/background-crew-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  nav{
+    margin: 5px 10px;
+  }
+  .nav_btn{
+    display: none;
+  }
+  .btn1{
+    display: none;
+  }
+  .hamburger div{
+      margin: 90px 10px;
+  }
+    .btn button{
+      margin: 10px;
+  }
+  .btn2{
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .open{
+    display: block;
+  }
+  main{
+    margin: 0 auto;
+
+  }
+  .container{
+    margin: 0;
+  }
+  .alone{
+    margin: 0;
+  }
+  .bold{
+    font-size: 2em;
+  }
+  h3{
+    font-size: s;
+  }
+  .imgSection2{
+    display: block;
+    align-items: center;
+    
+   
+  }
+  .imgSection2 img{
+    width: 90%;
+    height: 100%;
+    margin: 20px ;
+    margin-bottom: 0;
+    border-bottom: 2px solid;
+  }
+  .imgSection2 hr{
+    margin:  0 10px auto;
+    padding: 0;
+    width: 90%;
+  }
+  .imgSection{
+    display: none;
+  }
+  .textSection, .imgSection, .imgSection2{
+    padding: 0 auto;
+  }
+ 
+} 
