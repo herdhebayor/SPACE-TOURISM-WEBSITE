@@ -49,10 +49,10 @@ hr{
   width: 60%;
   display: flex;
   justify-content: space-around;
-  background-color: rgb(36, 36, 41, 0.3);
+  background-color: rgb(36, 36, 41, 0.5);
   height: 100%;
   padding-left: 70px;
-  backdrop-filter:blur(3px);
+  backdrop-filter:blur(10px);
 }
 .menu{
   height: 100%;
