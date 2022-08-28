@@ -63,6 +63,9 @@ nav{
   border: 0;
   background-color: transparent;
   color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   }
   .menu:hover{
   border-bottom: 2px solid #fff;
